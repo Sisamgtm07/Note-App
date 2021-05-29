@@ -4,12 +4,12 @@ import CreateNote from './CreateNote';
 import Note from './Note';
 import Footer from './Footer';
 function App() {
+
   const [addItem, setAddItem] = useState([]);
   const addNote = (note) => {
     setAddItem ((prevData) => {
       return [...prevData, note];
     });
-    console.log(note);
   };
 
   const onDelete = (id) =>{
@@ -21,7 +21,6 @@ function App() {
   };
   return (
     <>
-       
         <Header />
         <CreateNote passNote = {addNote} />
         {
