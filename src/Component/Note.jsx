@@ -1,9 +1,11 @@
 import React from 'react';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 const Note = (props) => {
+    
     const deleteNote = () =>{
         props.deleteItem(props.id);
     }
+
     return(
         <>
             <div className = "note">
