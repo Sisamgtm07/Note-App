@@ -1,13 +1,73 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: peachpuff;
+  text-align: center;
+}
+
+
+.main_note{
+  background-color: white;
+  height: 45vh;
+  width: 40%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+  border-radius: 10px;
+}
+
+.main_note form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.main_note form input, textarea{
+    margin-top: 10px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.185);
+    outline: none;
+    
+}
+.main_note form input{
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main_note form textarea{
+  font-size: 14px;
+  height: 28vh;
+  padding: 10px 20p;
+}
+
+.main_note form .add{
+  position: absolute;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.452);
+  border-radius: 50%;
+  right: -38px;
+  font-size: 40px;
+  max-width:30% ;
+  background-color: rgb(218, 96, 96);
+  color: white;
+  bottom: -32px;
+  transition: .5s ease all;
+  cursor: pointer;
+}
+.main_note form .add:hover{
+  background-color: rgb(201, 64, 64);
+  color: white;
+  
+}
+
+Button:hover{
+  background-color: white;
+  transition: none;
+  color: white;
 }
