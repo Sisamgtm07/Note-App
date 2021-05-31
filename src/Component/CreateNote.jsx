@@ -5,9 +5,9 @@ import AddIcon from '@material-ui/icons/Add';
 const CreateNote = (props) =>{
     const [note, setNote] = useState({
         title : "",
-        content : " ",
+        content : "",
     });
-
+    
     const inputEvent = (event) =>{
         const {name, value} = event.target;
         setNote ((prevData) =>{
@@ -17,25 +17,22 @@ const CreateNote = (props) =>{
 
             };
         });
-        console.log(note);
     };
-
-
     const addEvent = () =>{
             props.passNote(note);
             setNote({
             title : "",
-            content : " ",
+            content : "",
         })
     };
     return (
         <>
             <div className = "main_note">
                 <form>
-                    <input type = "text"  placeholder = "Title" name  = "title" value = {note.title} onChange = {inputEvent} autoComplete = "off" />
+                    <input type = "text"  placeholder = "Title..." name  = "title" value = {note.title} onChange = {inputEvent} autoComplete = "off" />
                     <textarea rows = "" column = ""  placeholder = "Write a note......" name = "content" value = {note.content} onChange = {inputEvent}></textarea>
                     <Button>
-                        <AddIcon onClick = {addEvent} />
+                        <AddIcon onClick = {addEvent} className = "add" />
                     </Button>
                 </form>
             </div> 
