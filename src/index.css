@@ -47,7 +47,7 @@ body{
 .main_note form textarea{
   font-size: 14px;
   height: 28vh;
-  padding: 10px 20p;
+  padding: 10px 20px;
 }
 
 .main_note form .add{
@@ -59,7 +59,7 @@ body{
   max-width:30% ;
   background-color: rgb(218, 96, 96);
   color: white;
-  bottom: -32px;
+  bottom: -25px;
   transition: .5s ease all;
   cursor: pointer;
 }
@@ -67,15 +67,6 @@ body{
   background-color: rgb(201, 64, 64);
   color: white;
   
-}
-.MuiButtonBase-root {
-  background: none;
-}
-.MuiButton-root:hover{
-  background-color: none;
-}
-.row{
-  display: flex;
 }
 .note{
   background-color: #fff;
@@ -107,4 +98,18 @@ body{
 .note button:hover{
   background-color: rgb(199, 75, 4);
   color: white;
+}
+
+.MuiButton-root,
+.MuiButtonBase-root,.MuiButton-text {
+      margin-top: 8px !important;
+}
+.MuiButton-root:hover,
+.MuiButtonBase-root:hover,.MuiButton-text:hover {
+  background-color: white !important;
+  -webkit-tap-highlight-color: white !important;
+}
+
+.MuiTouchRipple-root{
+  visibility: hidden;
 }
