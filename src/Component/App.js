@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Header from './Header';
 import CreateNote from './CreateNote';
 import Note from './Note';
-import Footer from './Footer';
 function App() {
 
   const [addItem, setAddItem] = useState([]);
@@ -35,7 +34,6 @@ function App() {
         })
         }
         
-        <Footer />
     </>
   );
 }
