@@ -76,9 +76,6 @@ body{
   padding: 20px 20px;
   margin: 50px 20px 20px 20px;
   display: inline-table;
-  
-
-
 }
 .note h1{
   color:rgb(218, 96, 96);
@@ -108,12 +105,11 @@ body{
 .MuiButtonBase-root,.MuiButton-text {
       margin-top: 8px !important;
 }
+.MuiTouchRipple-root{
+  visibility: hidden;
+}
 .MuiButton-root:hover,
 .MuiButtonBase-root:hover,.MuiButton-text:hover {
   background-color: white !important;
   -webkit-tap-highlight-color: white !important;
-}
-
-.MuiTouchRipple-root{
-  visibility: hidden;
 }
